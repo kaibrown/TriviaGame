@@ -2,7 +2,7 @@
 // $(document).ready(function(){
 
 // declaring our counter with the starting time, seconds...
-   var counter = 15;
+   var counter = 30;
 
 
 // declaring a variable that will hold out interval when we start 'run' function
@@ -26,9 +26,10 @@
       clearInterval (IntervalID);
       $('.gameName').html("<h1> Time is Up!! </h1>")
       $(".scrollpart").hide();
-      $('<audio src="assets/audio/horns.mp3" autoplay>');
-
-    };
+      // how do I stop the other music????
+      $(".bgmusic").replaceWith('<audio src="assets/audio/horns.mp3" autoplay>');
+      
+     };
     // $("#v1").html('<source src="test1.mp4" type="video/mp4"></source>' );
 
 
