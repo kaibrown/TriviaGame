@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    text-align: center;
+}
+
+
+.bgimg {
+	background-image: url("http://blog.scalecomputing.com/wp-content/uploads/2017/06/TPIR.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative
+	opacity: 0.6;
+}
+
+.newbgimg{
+	background-image: url("http://wwwimage.cbsstatic.com/base/files/styles/596xh/public/100819_D0336b.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative
+	opacity: 0.6;
+}
+
+.caption{
+	position: absolute;
+	background-color: #2C2F2E;
+	font-size: 4em;
+	text-align: center;
+	top: 25%;
+	width: 70%;
+	opacity: 0.85;
+}
+
+.tagline{
+	font-size: 1em;
+	opacity: 1.0;
+	color: #ffffff;
+}
+
+.gamepage{
+	background-color: #ffffff;
+
+}
+
+.scrollpart{
+	overflow: scroll;
+}
+
+.startpage{
+	display: none;
+}
+
+.quizpics{
+	width: 145px;
+}
