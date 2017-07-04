@@ -53,7 +53,14 @@ body, html {
 .startpage{
 	display: none;
 }
+.showResults{
+	display: none;
+}
 
 .quizpics{
 	width: 145px;
+}
+
+hr{
+	width: 50%;
 }
