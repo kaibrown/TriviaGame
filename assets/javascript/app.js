@@ -2,7 +2,7 @@
 // $(document).ready(function(){
 
 // declaring our counter with the starting time, seconds...
-   var counter = 10;
+   var counter = 40;
 
 
 // declaring a variable that will hold out interval when we start 'run' function
@@ -115,60 +115,64 @@
 
   console.log("ok everything is running fine, but now you need to compare answers..." );
 
-    // var not = !$("input[@name=q1]:checked").val();
-    //     not = 0;
-    //  if (q1Answer === 0){   
-     
-    //   notAnswered++;
-    //   writeUnanswered.text(notAnswered);
-    // };
-    if (q1Answer == "2" | "3") {
+   
+    if (q1Answer === "2" ||  q1Answer === "3" ) {
         answersWrong++;
         writeWrong.text(answersWrong);
-    }if (q1Answer == "1" ) {
+    } else if (q1Answer === "1" ) {
         answersRight++;
         writeRight.text(answersRight);
-    } else if (q1Answer == "0"){
+    } else {
+        notAnswered++;
+        writeUnanswered.text(notAnswered);
+    }
+
+  if (q2Answer === "2" ||  q2Answer === "3" ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else if (q2Answer === "1" ) {
+        answersRight++;
+        writeRight.text(answersRight);
+    } else {
+        notAnswered++;
+        writeUnanswered.text(notAnswered);
+    }
+
+  if (q3Answer === "2" ||  q3Answer === "3" ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else if (q3Answer === "1" ) {
+        answersRight++;
+        writeRight.text(answersRight);
+    } else {
+        notAnswered++;
+        writeUnanswered.text(notAnswered);
+    }
+
+  if (q4Answer === "2" ||  q4Answer === "3" ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else if (q4Answer === "1" ) {
+        answersRight++;
+        writeRight.text(answersRight);
+    } else {
+        notAnswered++;
+        writeUnanswered.text(notAnswered);
+    }
+
+      if (q5Answer === "2" ||  q5Answer === "3" ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else if (q5Answer === "1" ) {
+        answersRight++;
+        writeRight.text(answersRight);
+    } else {
         notAnswered++;
         writeUnanswered.text(notAnswered);
     }
 
     };
 
-    //  if (q2Answer !== "a" ) {
-    //     answersWrong++;
-    //     writeWrong.text(answersWrong);
-    // } if (q2Answer == "0"){
-    //     notAnswered++;
-    //     writeUnanswered.text(notAnswered);
-    // }else {
-    //     answersRight++;
-    //     writeRight.text(answersRight);
-    // };
-
-    //  if (q3Answer !== "a" ) {
-    //     answersWrong++;
-    //     writeWrong.text(answersWrong);
-    // } else {
-    //     answersRight++;
-    //     writeRight.text(answersRight);
-    // };
-
-    //  if (q4Answer !== "a" ) {
-    //     answersWrong++;
-    //     writeWrong.text(answersWrong);
-    // } else {
-    //     answersRight++;
-    //     writeRight.text(answersRight);
-    // };
-
-    // if (q5Answer !== "a" ) {
-    //     answersWrong++;
-    //     writeWrong.text(answersWrong);
-    // } else {
-    //     answersRight++;
-    //     writeRight.text(answersRight);
-    // };
 
 
 
