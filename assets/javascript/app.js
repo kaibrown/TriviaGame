@@ -2,20 +2,35 @@
 // $(document).ready(function(){
 
 // declaring our counter with the starting time, seconds...
-   var counter = 5;
+   var counter = 20;
 
 
 // declaring a variable that will hold out interval when we start 'run' function
    var IntervalID;
 
-// making a function to countdown the time given to answer questions...
+// variables to hold out score and write it to document
+  var answersRight;
+ var answersWrong;
+ var notAnswered;  
 
-  var decrement = function (){
+ var writeRight = $(".rightAnswers");
+ var writeWrong = $(".wrongAnswers");
+ var writeUnanswered = $(".notAnswered");
+
+ // 
+ // These are the functions
+ //         vvvvvvvvv
+ // 
+
+// making a function to countdown the time given to answer questions...
+// I inculded the answerCheck function so that it could run when the time hit 0
+var decrement = function (){
         counter--;
         $(".gameName").html("<h1> You have " + counter + " seconds left...</h1>");
         if (counter === 0){
           stop();
-
+          answerChecker();
+          return;
         } 
     };
 // making a stop function, when time runs out...
@@ -30,11 +45,11 @@
             $(".bgmusic").replaceWith('<audio src="assets/audio/horns.mp3" autoplay>');
             $(".showResults").show();
 
-           };
+           };           
     
 
 
-// making a run function that will run our countdown clock
+// making a run function that will run our countdown clock 
      var run = function (){
         IntervalID = setInterval (decrement, 1000);
      };
@@ -60,26 +75,122 @@
         
      };
 
+
+     //
+      //PLAYING AROUNG HERE WITH GAME LOGIC
+       //
+        
+
+
+
+
+
+
+  var answerChecker = function(){
+
+      answersRight = 0;
+      answersWrong = 0;
+      notAnswered = 0;
+
+      writeRight.text(answersRight);
+      writeWrong.text(answersWrong);
+      writeUnanswered.text(notAnswered);
+
+      var q1Answer = $("#question1").val();
+      
+      console.log(q1Answer);
+
+      var q2Answer = $("#question2").val();
+      
+      console.log(q2Answer);
+
+      var q3Answer = $("#question3").val();
+      
+      console.log(q3Answer);
+
+      var q4Answer = $("#question4").val();
+
+      console.log(q4Answer);
+
+       var q5Answer = $("#question5").val();
+
+      console.log(q4Answer);
+
+
+  console.log("ok everything is running fine, but now you need to compare answers..." );
+
+
+
+
+    if (q1Answer != 1 ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else {
+        answersRight++;
+        writeRight.text(answersRight);
+    };
+
+     if (q2Answer != 1 ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else {
+        answersRight++;
+        writeRight.text(answersRight);
+    };
+
+     if (q3Answer != 1 ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else {
+        answersRight++;
+        writeRight.text(answersRight);
+    };
+
+     if (q4Answer != 1 ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else {
+        answersRight++;
+        writeRight.text(answersRight);
+    };
+
+    if (q5Answer != 1 ) {
+        answersWrong++;
+        writeWrong.text(answersWrong);
+    } else {
+        answersRight++;
+        writeRight.text(answersRight);
+    };
+
+
+
+    console.log(answersRight);
+    console.log(answersWrong);
+
+
+  }
+
+
+
+
+
+
+
+
+
 // calling my functions and associating them with click events
 
       $(".startbutton").on("click", startGame);
 
       $(".timerbutton").on("click", startIt);
+      // answerChecker();
 
     
 
- //need to create game logic for the  
 
-// var cat1 = ($("input[@name=q1]:checked").val() != "a");
-// var cat2 = ($("input[@name=q2]:checked").val() != "b");
-// var cat3 = ($("input[@name=q3]:checked").val() != "c");
 
-// var cat4 = (!cat1 && !cat2 && !cat3);
-// var categories = []; 
 
-// if (cat1) { categories.push(cat1name) };            
-// if (cat2) { categories.push(cat2name) };            
-// if (cat3) { categories.push(cat3name) };
+
 
      
 
