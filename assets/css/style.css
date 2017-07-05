@@ -24,6 +24,16 @@ body, html {
 	opacity: 0.6;
 }
 
+.finalbgimg{
+	background-image: url("http://i.imgur.com/DQPyUXs.gif");
+	height: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative
+	opacity: 0.6;
+}
+
 .caption{
 	position: absolute;
 	background-color: #2C2F2E;

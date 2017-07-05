@@ -2,7 +2,7 @@
 // $(document).ready(function(){
 
 // declaring our counter with the starting time, seconds...
-   var counter = 20;
+   var counter = 60;
 
 
 // declaring a variable that will hold out interval when we start 'run' function
@@ -29,6 +29,7 @@ var decrement = function (){
         $(".gameName").html("<h1> You have " + counter + " seconds left...</h1>");
         if (counter === 0){
           stop();
+          $(".newbgimg").removeClass("newbgimg").addClass("finalbgimg");
           answerChecker();
           return;
         } 
