@@ -9,7 +9,7 @@ play here: https://kaibrown.github.io/TriviaGame/
 
 inspired by The Price is Right: "The Grocery Game"
 
--trivia form with multiple choice questions 
--limited amount of time to finish the quiz.
-- game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+-trivia form with multiple choice questions ❓❓❓
+-limited amount of time to finish the quiz. ⏱
+-game ends when the time runs out. [The page will reveal the # of questions that player answered ✔️ and ❌ .
 
