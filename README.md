@@ -1,1 +1,15 @@
 # TriviaGame
+
+A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. App layout was created with valid HTML and stylish CSS.
+
+play here: 
+🎧 turn your sound on 🎧
+
+
+
+inspired by The Price is Right: "The Grocery Game"
+
+-trivia form with multiple choice questions 
+-limited amount of time to finish the quiz.
+- game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
