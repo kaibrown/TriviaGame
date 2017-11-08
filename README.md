@@ -2,7 +2,7 @@
 
 A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. App layout was created with valid HTML and stylish CSS.
 
-play here: 
+play here: https://kaibrown.github.io/TriviaGame/
 🎧 turn your sound on 🎧
 
 
